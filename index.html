@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈娜娜 | 作品集</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #00F5A0, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            color: #888;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+        .cards {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 40px 30px;
+            width: 280px;
+            text-decoration: none;
+            color: #e0e0e0;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00F5A0;
+            box-shadow: 0 10px 40px rgba(0, 245, 160, 0.15);
+        }
+        .card .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>陈娜娜 作品集</h1>
+        <p class="subtitle">选择一个版本查看</p>
+        <div class="cards">
+            <a href="简约版/index.html" class="card">
+                <div class="icon">✨</div>
+                <h2>简约版</h2>
+                <p>简洁大方的设计风格</p>
+            </a>
+            <a href="喜羊羊版/index.html" class="card">
+                <div class="icon">🎨</div>
+                <h2>喜羊羊版</h2>
+                <p>活泼创意的设计风格</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
