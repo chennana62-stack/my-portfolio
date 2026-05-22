@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈娜娜 | 融媒体全栈创作者作品集</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            background-color: #080C10; /* 深邃暗色背景 */
+            color: #E2E8F0;
+        }
+        /* 霓虹绿色发光字和边框效果 */
+        .neon-text-green {
+            color: #00F5A0;
+            text-shadow: 0 0 8px rgba(0, 245, 160, 0.4);
+        }
+        .neon-border-green {
+            border-color: rgba(0, 245, 160, 0.2);
+            box-shadow: 0 0 15px rgba(0, 245, 160, 0.05);
+        }
+        .neon-border-green:hover {
+            border-color: #00F5A0;
+            box-shadow: 0 0 20px rgba(0, 245, 160, 0.15);
+        }
+        /* 极简网格背景 */
+        .grid-bg {
+            background-image: linear-gradient(rgba(0, 245, 160, 0.03) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0, 245, 160, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        /* 丝滑过渡 */
+        .smooth-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="grid-bg min-h-screen">
+
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#080C10]/80 border-b border-zinc-800/80 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-[#00F5A0] animate-pulse"></span>
+                <span class="font-bold tracking-wider text-white text-lg">NANA.CH EN</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm tracking-wide text-zinc-400">
+                <a href="#about" class="hover:text-[#00F5A0] smooth-transition">ABOUT / 个人</a>
+                <a href="#skills" class="hover:text-[#00F5A0] smooth-transition">SKILLS / 技能</a>
+                <a href="#experience" class="hover:text-[#00F5A0] smooth-transition">EXPERIENCE / 历练</a>
+                <a href="#projects" class="hover:text-[#00F5A0] smooth-transition">PORTFOLIO / 作品</a>
+            </div>
+            <div>
+                <a href="https://acnptq2fruzq.feishu.cn" target="_blank" class="border border-[#00F5A0] text-[#00F5A0] hover:bg-[#00F5A0]/10 px-4 py-1.5 rounded text-xs tracking-wider font-medium smooth-transition">
+                    飞书主站 <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="max-w-6xl mx-auto px-6 pt-16 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+            <div class="inline-block bg-[#00F5A0]/10 text-[#00F5A0] text-xs font-semibold px-3 py-1 rounded border border-[#00F5A0]/20">
+                PORTFOLIO — VERSION 2.1
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">
+                陈娜娜 <br>
+                <span class="neon-text-green">融媒体全栈创作者</span>
+            </h1>
+            <p class="text-zinc-400 text-base md:text-lg leading-relaxed max-w-xl">
+                黑龙江大学新闻学专硕。深谙新闻传播逻辑，以专业内容为内核，以多元视觉与AI算法为羽翼。手握 6 条自媒体百万爆款，熟练掌握 Stable Diffusion、达芬奇调色及主流视频包装。
+            </p>
+            <div class="pt-4 flex flex-wrap gap-4">
+                <a href="#projects" class="bg-[#00F5A0] text-black hover:bg-[#00D285] font-semibold px-6 py-3 rounded text-sm smooth-transition">
+                    浏览精选作品集
+                </a>
+                <a href="#contact" class="border border-zinc-700 hover:border-[#00F5A0] text-zinc-300 hover:text-white px-6 py-3 rounded text-sm smooth-transition">
+                    联系我 / CONTACT
+                </a>
+            </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+            <div class="relative group">
+                <div class="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-[#00F5A0]"></div>
+                <div class="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-[#00F5A0]"></div>
+                <div class="w-64 h-80 bg-zinc-950 border border-zinc-800 rounded-sm overflow-hidden relative flex items-center justify-center">
+                    
+                    <img id="avatar-img" src="e1c8b338d9ebd2198f3541ccfaa6153.jpg" alt="陈娜娜" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 smooth-transition absolute inset-0 z-10" onerror="handleImageError()">
+                    
+                    <div id="avatar-placeholder" class="text-center p-6 space-y-4 select-none">
+                        <div class="w-20 h-20 rounded-full bg-[#00F5A0]/10 border border-[#00F5A0]/30 flex items-center justify-center mx-auto animate-pulse">
+                            <span class="text-2xl text-[#00F5A0] font-mono font-bold tracking-wider">NN</span>
+                        </div>
+                        <div class="space-y-1">
+                            <p class="text-sm font-bold text-white tracking-wide">陈娜娜 / NANA</p>
+                            <p class="text-[10px] text-zinc-500 font-mono tracking-widest">// SYSTEM ACTIVE</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded text-[10px] text-zinc-400 border border-zinc-800 z-20 font-mono">
+                        NANA_CH EN // PR.AE.SD
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="bg-[#0A0E12] border-y border-zinc-900 py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12">
+                <div>
+                    <span class="text-xs font-semibold text-[#00F5A0] tracking-widest uppercase block mb-2">// CAPABILITIES</span>
+                    <h2 class="text-3xl font-bold text-white">数字化创意兵器库</h2>
+                </div>
+                <p class="text-zinc-500 text-sm mt-2 md:mt-0 max-w-sm">
+                    传统媒介思维与人工智能生产工具的交互融合，构建高维度内容壁垒。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#0D131A] p-8 border border-zinc-800/80 rounded neon-border-green smooth-transition">
+                    <div class="text-[#00F5A0] text-3xl mb-6"><i class="fa-solid fa-feather-pointed"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-3">媒介策划与稿件撰写</h3>
+                    <p class="text-zinc-400 text-xs leading-relaxed mb-4">
+                        传统新闻专硕的严谨学术沉淀 + 互联网网感。曾任今日头条内容作者。擅长撰写深度纪实、社会学洞察、平台引流等多种调性文章，输出文字直击痛点。
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-zinc-900 text-zinc-300 text-[10px] px-2 py-1 rounded">头条深度稿</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-[10px] px-2 py-1 rounded">学术访谈研究</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-[10px] px-2 py-1 rounded">文案企划</span>
+                    </div>
+                </div>
+
+                <div class="bg-[#0D131A] p-8 border border-zinc-800/80 rounded neon-border-green smooth-transition">
+                    <div class="text-[#00F5A0] text-3xl mb-6"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-3">AI设计与视觉美学</h3>
+                    <p class="text-zinc-400 text-xs leading-relaxed mb-4">
+                        在前沿AI海报生产与H5宣发中表现卓越。熟练掌握 Stable Diffusion、稿定设计、方正排版。为海外出海项目构建了高转换率的平面视觉资产。
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-zinc-900 text-zinc-300 text-[10px] px-2 py-1 rounded">Stable Diffusion</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-[10px] px-2 py-1 rounded">H5/海报设计</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-[10px] px-2 py-1 rounded">方正排版</span>
+                    </div>
+                </div>
+
+                <div class="bg-[#0D131A] p-8 border border-zinc-800/80 rounded neon-border-green smooth-transition">
+                    <div class="text-[#00F5A0] text-3xl mb-6"><i class="fa-solid fa-video"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-3">全能视频开发 & 自媒体</h3>
+                    <p class="text-zinc-400 text-xs leading-relaxed mb-4">
+                        精通 Pr、Ae、达芬奇调色。拥有海外电影电视学交换深造背景，担任主创团队骨干。具备成熟的从“选题-脚本-拍摄-剪辑-起号复盘”全链路闭环操盘能力。
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-zinc-900 text-zinc-300 text-[10px] px-2 py-1 rounded">达芬奇调色</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-[10px] px-2 py-1 rounded">Pr/Ae精通</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-[10px] px-2 py-1 rounded">6条百万爆款</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="max-w-6xl mx-auto px-6 py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-5 space-y-6">
+                <span class="text-xs font-semibold text-[#00F5A0] tracking-widest uppercase block">// EDUCATION</span>
+                <h2 class="text-3xl font-bold text-white">学术底色与科班修养</h2>
+                <p class="text-zinc-400 text-sm leading-relaxed">
+                    新闻学专硕的理性克制 + 电影电视艺术的细腻感性。我坚信，在融媒体时代，只有经过深思熟虑的知识基底才能孕育出长期具有生命力的好内容。
+                </p>
+                
+                <div class="space-y-6 pt-4">
+                    <div class="border-l-2 border-[#00F5A0] pl-4">
+                        <span class="text-xs text-zinc-500 font-mono">2025 - 2028</span>
+                        <h4 class="font-bold text-white">黑龙江大学 · 新闻传播学专硕</h4>
+                        <p class="text-xs text-[#00F5A0] mt-1">系统传播理论沉淀，专注于新媒介素养及自媒体生态研究</p>
+                    </div>
+                    <div class="border-l-2 border-zinc-800 pl-4">
+                        <span class="text-xs text-zinc-500 font-mono">2023 - 2024</span>
+                        <h4 class="font-bold text-white">义守大学 (交换) · 电影电视学</h4>
+                        <p class="text-xs text-zinc-400 mt-1">系统影视叙事技巧、独立制片、后期调色及艺术审美进阶</p>
+                    </div>
+                    <div class="border-l-2 border-zinc-800 pl-4">
+                        <span class="text-xs text-zinc-500 font-mono">2021 - 2025</span>
+                        <h4 class="font-bold text-white">宿州学院 · 新闻学学士</h4>
+                        <p class="text-xs text-zinc-400 mt-1">核心参与并开展调研撰写《互联网语境下寿县古城传播现状——以抖音平台为例》</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-xs font-semibold text-[#00F5A0] tracking-widest uppercase block">// INDUSTRY HISTORY</span>
+                <h2 class="text-3xl font-bold text-white">实战履历与业界交付</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-[#0A0E12] border border-zinc-800 p-6 rounded hover:border-[#00F5A0]/50 smooth-transition">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <h4 class="text-lg font-bold text-white">上海麦糖网络科技 · 平台运营</h4>
+                                <span class="text-xs text-zinc-400">海外项目拓展 / 视觉设计与H5产出</span>
+                            </div>
+                            <span class="text-xs text-black bg-[#00F5A0] px-2.5 py-1 rounded font-mono">2025.12 - 2026.03</span>
+                        </div>
+                        <p class="text-xs text-zinc-400 leading-relaxed">
+                            负责公司全新出海项目在海外的整体推广及核心用户深度发掘。结合 <b>Stable Diffusion</b> AI技术设计产出高度吸睛的海报与H5宣传页，使新客转化率和内容产出效能实现跨越式增长。
+                        </p>
+                    </div>
+
+                    <div class="bg-[#0A0E12] border border-zinc-800 p-6 rounded hover:border-[#00F5A0]/50 smooth-transition">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <h4 class="text-lg font-bold text-white">自媒体博主助理 · 核心团队运营</h4>
+                                <span class="text-xs text-zinc-400">视频前期企划 / 日常拍摄剪辑 / 爆款视频设计</span>
+                            </div>
+                            <span class="text-xs text-black bg-[#00F5A0] px-2.5 py-1 rounded font-mono">2024.12 - 2025.03</span>
+                        </div>
+                        <p class="text-xs text-zinc-400 leading-relaxed">
+                            深度操盘内容生产，精准把控账号调性与粉丝受众偏好。<b>团队期间，累计产出爆款视频达 6 条！</b> 独立统筹并承担直播间的主播与导演控制工作，全程把控话术引导和带货互动节奏。
+                        </p>
+                    </div>
+
+                    <div class="bg-[#0A0E12] border border-zinc-800 p-6 rounded hover:border-[#00F5A0]/50 smooth-transition">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <h4 class="text-lg font-bold text-white">今日头条 · 平台内容创作</h4>
+                                <span class="text-xs text-zinc-400">稿件写作 / 流量热点选题</span>
+                            </div>
+                            <span class="text-xs text-black bg-[#00F5A0] px-2.5 py-1 rounded font-mono">2023.06 - 2023.09</span>
+                        </div>
+                        <p class="text-xs text-zinc-400 leading-relaxed">
+                            洞察头条算法与垂直受众胃口，持续产出符合高点击、深阅读的平台稿件。不仅精修文字，更建立了严密敏锐的平台热门选题逻辑。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-[#06090D] border-t border-zinc-900 py-24 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <span class="text-xs font-semibold text-[#00F5A0] tracking-widest uppercase block mb-3">// CURATED PORTFOLIO</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">飞书作品库 · 深度实录入口</h2>
+            <p class="text-zinc-500 text-sm max-w-xl mx-auto mb-16">
+                通过飞书知识库实现“多链路极速直达”。您可以点击以下相应版块，快速预览经过精心排版和数据复盘的案例实录。
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-[#0A0E12] border border-zinc-800 p-6 rounded flex flex-col justify-between text-left group hover:border-[#00F5A0] smooth-transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[#00F5A0] text-2xl"><i class="fa-solid fa-file-invoice"></i></span>
+                            <span class="text-[9px] font-mono text-zinc-500 uppercase">PART_01 / DOCUMENT</span>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-2 group-hover:text-[#00F5A0] smooth-transition">新闻稿与文案库</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed mb-6">
+                            收录了今日头条爆款纪实、自媒体分镜案，以及针对抖音平台《互联网语境下寿县古城传播现状》的核心社会学术论文。
+                        </p>
+                    </div>
+                    <a href="https://acnptq2fruzq.feishu.cn/wiki/GmHXwnFnJiWPBXkQUCOcYkXGnod?from=from_copylink" target="_blank" class="w-full text-center block bg-zinc-900 hover:bg-[#00F5A0] text-white hover:text-black text-xs py-2.5 rounded font-medium tracking-wider smooth-transition">
+                        进入文字实录 <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[8px]"></i>
+                    </a>
+                </div>
+
+                <div class="bg-[#0A0E12] border border-zinc-800 p-6 rounded flex flex-col justify-between text-left group hover:border-[#00F5A0] smooth-transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[#00F5A0] text-2xl"><i class="fa-solid fa-clapperboard"></i></span>
+                            <span class="text-[9px] font-mono text-zinc-500 uppercase">PART_02 / MOTION</span>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-2 group-hover:text-[#00F5A0] smooth-transition">自媒体爆款实录</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed mb-6">
+                            整理了我深度参与、累计斩获 6 条百万播放视频的创作全过程，包括分镜构想、直播控制复盘以及镜头审美档案。
+                        </p>
+                    </div>
+                    <a href="https://acnptq2fruzq.feishu.cn/wiki/MWl0wzgLhiDl5QkubFdcwCNOnCc?from=from_copylink" target="_blank" class="w-full text-center block bg-zinc-900 hover:bg-[#00F5A0] text-white hover:text-black text-xs py-2.5 rounded font-medium tracking-wider smooth-transition">
+                        查看高燃视频 <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[8px]"></i>
+                    </a>
+                </div>
+
+                <div class="bg-[#0A0E12] border border-zinc-800 p-6 rounded flex flex-col justify-between text-left group hover:border-[#00F5A0] smooth-transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[#00F5A0] text-2xl"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                            <span class="text-[9px] font-mono text-zinc-500 uppercase">PART_03 / AI ART</span>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-2 group-hover:text-[#00F5A0] smooth-transition">AI 艺术图像生成</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed mb-6">
+                            依托 Stable Diffusion、Midjourney 生成的电影前后期风格图、美术设计样张，探索 AIGC 对新媒体视觉内容的革命性重塑。
+                        </p>
+                    </div>
+                    <a href="https://acnptq2fruzq.feishu.cn/wiki/YVhiwbMLVi0VwGkWDijcAdJsnEc?from=from_copylink" target="_blank" class="w-full text-center block bg-zinc-900 hover:bg-[#00F5A0] text-white hover:text-black text-xs py-2.5 rounded font-medium tracking-wider smooth-transition">
+                        进入AI视觉空间 <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[8px]"></i>
+                    </a>
+                </div>
+
+                <div class="bg-[#0A0E12] border border-zinc-800 p-6 rounded flex flex-col justify-between text-left group hover:border-[#00F5A0] smooth-transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[#00F5A0] text-2xl"><i class="fa-solid fa-cubes"></i></span>
+                            <span class="text-[9px] font-mono text-zinc-500 uppercase">PART_04 / DESIGN</span>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-2 group-hover:text-[#00F5A0] smooth-transition">平面与 H5 宣发</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed mb-6">
+                            展示了在麦糖科技出海项目期间的高转化率 H5 落地页、精致商业海报设计，以及公众号优质推文的创意排版美学。
+                        </p>
+                    </div>
+                    <a href="https://acnptq2fruzq.feishu.cn/wiki/XGjPwapVmiao2SkejbMcwhpYnPc?from=from_copylink" target="_blank" class="w-full text-center block bg-zinc-900 hover:bg-[#00F5A0] text-white hover:text-black text-xs py-2.5 rounded font-medium tracking-wider smooth-transition">
+                        进入排版设计库 <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[8px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-24 text-center">
+        <div class="border border-zinc-800 p-8 md:p-12 rounded bg-[#0A0E12] relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-[#00F5A0] opacity-5 blur-3xl"></div>
+            <span class="text-[#00F5A0] text-xs font-mono tracking-widest block mb-4">// TRANSMISSION STATION</span>
+            <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">获取陈娜娜完整精装简历及音视频包</h3>
+            <p class="text-zinc-400 text-xs max-w-md mx-auto mb-10 leading-relaxed">
+                感谢您的到访。如果您正在寻找拥有大厂运营实力、懂深度稿件架构、同时精通 AI 平面生成的复合型融媒体合伙人，欢迎随时建立连接。
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-xl mx-auto">
+                <div class="bg-zinc-900 border border-zinc-800 p-4 rounded flex items-center justify-between smooth-transition hover:border-[#00F5A0]/60">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-[#00F5A0] text-xl"><i class="fa-solid fa-phone"></i></span>
+                        <div>
+                            <span class="text-[10px] text-zinc-500 block">CALL</span>
+                            <span class="text-xs font-mono font-bold text-white">17856965228</span>
+                        </div>
+                    </div>
+                    <a href="tel:17856965228" class="text-zinc-500 hover:text-[#00F5A0]"><i class="fa-solid fa-phone-flip text-xs"></i></a>
+                </div>
+
+                <div class="bg-zinc-900 border border-zinc-800 p-4 rounded flex items-center justify-between smooth-transition hover:border-[#00F5A0]/60">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-[#00F5A0] text-xl"><i class="fa-solid fa-envelope"></i></span>
+                        <div>
+                            <span class="text-[10px] text-zinc-500 block">E-MAIL</span>
+                            <span class="text-xs font-mono font-bold text-white">2835475090@qq.com</span>
+                        </div>
+                    </div>
+                    <button onclick="copyEmail()" class="text-zinc-500 hover:text-[#00F5A0]" id="copy-btn"><i class="fa-solid fa-copy text-xs"></i></button>
+                </div>
+            </div>
+
+            <div id="toast-notify" class="hidden mt-6 text-xs text-[#00F5A0] bg-[#00F5A0]/10 border border-[#00F5A0]/20 py-2 rounded max-w-xs mx-auto animate-pulse">
+                📬 邮箱已成功复制到剪贴板！
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-zinc-900 bg-black/40 py-12 px-6 text-zinc-600 text-xs">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© 2026 陈娜娜. All Rights Reserved. Minimalist Dark Emerald Studio.</p>
+            <div class="flex space-x-6">
+                <span class="text-zinc-500">CET-6 认证</span>
+                <span class="text-zinc-500">全国演出经纪人证</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleImageError() {
+            const img = document.getElementById('avatar-img');
+            if (img) { img.style.display = 'none'; }
+        }
+        function copyEmail() {
+            const emailText = "2835475090@qq.com";
+            const tempInput = document.createElement("input");
+            tempInput.value = emailText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            const notify = document.getElementById("toast-notify");
+            notify.classList.remove("hidden");
+            setTimeout(() => { notify.classList.add("hidden"); }, 3000);
+        }
+    </script>
+</body>
+</html>
